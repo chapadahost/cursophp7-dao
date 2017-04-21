@@ -1,13 +1,20 @@
 <?php 
 
 	require_once("config.php");
+	
+	//CARREGA LISTA USUARIOS
+	$lista = Usuario::getList();
 
-	$maria = new Usuario();
+	echo json_encode($lista);
 
-	$maria->loadbyId(3);
 
-	echo $maria;
-	/*
+	//CARREGA UM USUÁRIO
+	//$maria = new Usuario();
+	//$maria->loadbyId(3);
+	//echo $maria;
+
+
+	/* SELECT
 
 	$sql = new Sql();
 
