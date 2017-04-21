@@ -27,12 +27,17 @@
 	echo $aluno;
 	*/
 
+
+	/* ALTERANDO UM NOVE USUARIO
 	$usuario = new Usuario();
-
 	$usuario->loadbyId(7);
-
 	$usuario->update("macaca", "8888");
 
 	echo $usuario;
+	*/
+	$usuario = new Usuario();
+	$usuario->loadbyId(7);
+	$usuario->delete();
 
+	echo $usuario;
  ?>
